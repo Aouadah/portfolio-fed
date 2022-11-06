@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
 body {
   color: darkblue;
-  background-color: #40e0d0;
+  background-color: #87ceeb;
   font-family: georgia, serif, sans-serif;
 }
 
@@ -14,18 +16,34 @@ body {
 h1 {
   text-align: center;
   padding: 10px;
+  font-family: 'Lobster';
+  font-size: 3em;
 }
 
-img {
+#header_image {
   box-sizing: content-box;
   width: 25vw;
   border: solid darkblue 5px;
+  filter: drop-shadow(16px 16px 16px darkblue);
+  animation: movedown 3s ease-out;
 }
 
 /* MOBILE */
 @media (max-width:767px) {
-  img {
+  #header_image {
     width: 50vw;
+  }
+}
+
+@keyframes movedown {
+  from {
+    opacity:0;
+    transform: scale(1.2) translateY(-100px);
+  }
+
+  to {
+    opacity:1.2;
+    transform: scale(1) translateY(0);
   }
 }
 
@@ -47,14 +65,14 @@ nav {
 }
 
 p {
-  margin-left: 30px;
+  padding: 10px;
+  font-size: 1.2em;
 }
 
 table {
   border: 2px solid darkblue;
   border-radius: 0px;
   padding: 20px;
-  margin-left: 30px;
 }
 
 /* MOBILE */
@@ -66,13 +84,114 @@ table {
   }
 }
 
+footer {
+  background-color: #ffff66;
+}
+
 a:visited {
   color: red;
 }
 
+#celeste {
+  background-color: #fc6c85;
+}
 
+#ahit {
+  background-color: #9f00ff;
+}
 
+#worms {
+  background-color: #FFD700;
+}
 
+.games_image {
+  box-sizing: content-box;
+  width: 28vw;
+  border: solid darkblue 5px;
+  margin: 0 auto;
+}
+
+/* MOBILE */
+@media (max-width:767px) {
+  .games_image {
+    box-sizing: content-box;
+    width: 80%;
+    border: solid darkblue 5px;
+  }
+}
+
+li {
+  color: black;
+  font-size: 1.2em;
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+/* MOBILE */
+@media (max-width:767px) {
+  li {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+#contact_container {
+  background-color: white;
+  width: 50vw;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* MOBILE */
+@media (max-width:767px) {
+  #contact_container {
+    width: 90%;
+  }
+}
+
+form {
+  display:flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.contact_antwoord {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  font-size: 2em;
+  text-align: center;
+}
+
+/* MOBILE */
+@media (max-width:767px) {
+  .contact_antwoord {
+    display:flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+}
+
+#bedankt_text {
+  font-size: 2em;
+  text-align: center;
+  background-color: white;
+  padding: 20px;
+  width: 50%;
+  margin: 0 auto;
+}
+
+/* MOBILE */
+@media (max-width:767px) {
+  #bedankt_text {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
 
 
 
