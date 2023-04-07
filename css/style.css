@@ -107,6 +107,7 @@ a {
   width: 28vw;
   border: solid darkblue 5px;
   margin: 0 auto;
+  margin-top:5px;
 }
 
 /* MOBILE */
@@ -192,5 +193,16 @@ form {
   }
 }
 
+.image-side {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+}
 
+#projectbody {
+  background-color: #66ff66;
+}
 
+#projectbody2 {
+  background-color: #9678b6;
+}
