@@ -110,6 +110,15 @@ a {
   margin-top:5px;
 }
 
+.games_image_gamescreens {
+  box-sizing: content-box;
+  width: 28vw;
+  height: 15vw;
+  border: solid darkblue 5px;
+  margin: 0 auto;
+  margin-top:40px;
+}
+
 /* MOBILE */
 @media (max-width:767px) {
   .games_image {
@@ -205,4 +214,8 @@ form {
 
 #projectbody2 {
   background-color: #9678b6;
+}
+
+#projectbody3 {
+  background-color: #ff355e;
 }
